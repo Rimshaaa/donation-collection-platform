@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Givers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Global Theme CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="d-flex">
+
+  <!-- =====================
+       SIDEBAR
+  ===================== -->
+  <aside class="sidebar">
+    <h5 class="text-white text-center mb-4">Donation Platform</h5>
+
+    <a href="../index.html">Dashboard</a>
+    <a href="causes.html">Donation Causes</a>
+    <a href="contacts.html">Needy Contacts</a>
+    <a href="donors.html" class="active">Donation Givers</a>
+    <a href="reports.html">Reports</a>
+    <a href="about.html">About / Contact</a>
+  </aside>
+
+  <!-- =====================
+       MAIN CONTENT
+  ===================== -->
+  <main class="main-content">
+
+    <h3 class="section-title">Recent Donation Givers</h3>
+
+    <p class="text-muted mb-4" style="max-width: 850px;">
+      Below is a list of donors who have recently contributed to various causes.
+      Regular donors are highlighted in green to recognize ongoing support,
+      while first-time donors are shown in blue.
+    </p>
+
+    <!-- =====================
+         DONORS TABLE
+    ===================== -->
+    <div class="card shadow-sm">
+      <div class="card-body p-0">
+
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+
+            <thead class="table-light">
+              <tr>
+                <th>Donor Name</th>
+                <th>Donation Amount</th>
+                <th>Donation Type</th>
+                <th>Donation Date</th>
+                <th>Donor Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <!-- REGULAR DONORS (LIGHT GREEN FULL ROW) -->
+              <tr class="row-regular">
+                <td class="fw-semibold">Ali Hassan</td>
+                <td>PKR 15,000</td>
+                <td>Monthly</td>
+                <td>12 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+              <tr class="row-regular">
+                <td class="fw-semibold">Sara Ahmed</td>
+                <td>PKR 8,000</td>
+                <td>Monthly</td>
+                <td>11 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+              <tr class="row-regular">
+                <td class="fw-semibold">Muhammad Usman</td>
+                <td>PKR 20,000</td>
+                <td>One-time</td>
+                <td>10 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+              <!-- FIRST TIME / ONE-TIME DONORS (LIGHT BLUE FULL ROW) -->
+              <tr class="row-first">
+                <td class="fw-semibold">Ayesha Khan</td>
+                <td>PKR 5,000</td>
+                <td>One-time</td>
+                <td>09 Jan 2026</td>
+                <td class="text-primary fw-semibold">First-time Donor</td>
+              </tr>
+
+              <tr class="row-first">
+                <td class="fw-semibold">Bilal Raza</td>
+                <td>PKR 3,000</td>
+                <td>One-time</td>
+                <td>08 Jan 2026</td>
+                <td class="text-primary fw-semibold">First-time Donor</td>
+              </tr>
+
+              <tr class="row-first">
+                <td class="fw-semibold">Nida Saleem</td>
+                <td>PKR 7,500</td>
+                <td>One-time</td>
+                <td>07 Jan 2026</td>
+                <td class="text-primary fw-semibold">First-time Donor</td>
+              </tr>
+
+              <!-- MORE REGULAR DONORS -->
+              <tr class="row-regular">
+                <td class="fw-semibold">Hassan Iqbal</td>
+                <td>PKR 12,000</td>
+                <td>Monthly</td>
+                <td>06 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+              <tr class="row-regular">
+                <td class="fw-semibold">Zainab Noor</td>
+                <td>PKR 9,000</td>
+                <td>Monthly</td>
+                <td>05 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+              <!-- MORE FIRST TIME DONORS -->
+              <tr class="row-first">
+                <td class="fw-semibold">Kamran Malik</td>
+                <td>PKR 4,500</td>
+                <td>One-time</td>
+                <td>04 Jan 2026</td>
+                <td class="text-primary fw-semibold">First-time Donor</td>
+              </tr>
+
+              <tr class="row-first">
+                <td class="fw-semibold">Rabia Siddiq</td>
+                <td>PKR 6,000</td>
+                <td>One-time</td>
+                <td>03 Jan 2026</td>
+                <td class="text-primary fw-semibold">First-time Donor</td>
+              </tr>
+
+              <tr class="row-regular">
+                <td class="fw-semibold">Fahad Khan</td>
+                <td>PKR 18,000</td>
+                <td>Monthly</td>
+                <td>02 Jan 2026</td>
+                <td class="text-success fw-semibold">Regular Donor</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- =====================
+     FOOTER
+===================== -->
+<footer class="footer mt-4">
+  © 2026 U Devs | Donation Collection Platform
+</footer>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

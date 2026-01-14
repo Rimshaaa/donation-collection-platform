@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Causes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Global Theme CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- =====================
+     MAIN LAYOUT
+===================== -->
+<div class="d-flex">
+
+  <!-- =====================
+       SIDEBAR
+  ===================== -->
+  <aside class="sidebar">
+    <h5 class="text-white text-center mb-4">Donation Platform</h5>
+
+    <a href="../index.html">Dashboard</a>
+    <a href="causes.html" class="active">Donation Causes</a>
+    <a href="contacts.html">Needy Contacts</a>
+    <a href="donors.html">Donation Givers</a>
+    <a href="reports.html">Reports</a>
+    <a href="about.html">About / Contact</a>
+  </aside>
+
+  <!-- =====================
+       MAIN CONTENT
+  ===================== -->
+  <main class="main-content">
+
+    <h3 class="section-title">Active Donation Causes</h3>
+    <!-- SEARCH & FILTER (UI ONLY) -->
+<div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+
+  <!-- Search -->
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search donation causes..."
+    style="max-width: 300px;"
+  >
+
+  <!-- Category Filters -->
+  <div class="btn-group">
+    <button class="btn btn-outline-success active">All</button>
+    <button class="btn btn-outline-success">Medical</button>
+    <button class="btn btn-outline-success">Education</button>
+    <button class="btn btn-outline-success">Emergency</button>
+    <button class="btn btn-outline-success">Food</button>
+    <button class="btn btn-outline-success">Housing</button>
+  </div>
+
+</div>
+
+
+    <div class="row g-4">
+
+      <!-- =====================
+           CAUSE CARD 1
+      ===================== -->
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="card cause-card h-100 shadow-sm cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#donationDetailsModal"
+        >
+          <div class="card-body d-flex flex-column">
+
+            <span class="badge bg-success mb-2 align-self-start">Medical</span>
+
+            <h5 class="fw-semibold">Medical Surgery Assistance</h5>
+            <p class="text-muted small mb-3">
+              Help a patient receive urgent life-saving surgery.
+            </p>
+
+            <div class="mb-1 small">
+              <strong>Required:</strong> PKR 300,000
+            </div>
+            <div class="mb-3 small">
+              <strong>Collected:</strong> PKR 150,000
+            </div>
+
+            <div class="progress mb-4">
+              <div class="progress-bar" style="width:50%"></div>
+            </div>
+
+            <button class="btn btn-success mt-auto w-100">
+              Donate Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================
+           CAUSE CARD 2
+      ===================== -->
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="card cause-card h-100 shadow-sm cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#donationDetailsModal"
+        >
+          <div class="card-body d-flex flex-column">
+
+            <span class="badge bg-primary mb-2 align-self-start">Education</span>
+
+            <h5 class="fw-semibold">Education Support Fund</h5>
+            <p class="text-muted small mb-3">
+              Support underprivileged students with school fees.
+            </p>
+
+            <div class="mb-1 small">
+              <strong>Required:</strong> PKR 200,000
+            </div>
+            <div class="mb-3 small">
+              <strong>Collected:</strong> PKR 90,000
+            </div>
+
+            <div class="progress mb-4">
+              <div class="progress-bar" style="width:45%"></div>
+            </div>
+
+            <button class="btn btn-success mt-auto w-100">
+              Donate Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================
+           CAUSE CARD 3
+      ===================== -->
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="card cause-card h-100 shadow-sm cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#donationDetailsModal"
+        >
+          <div class="card-body d-flex flex-column">
+
+            <span class="badge bg-danger mb-2 align-self-start">Urgent</span>
+
+            <h5 class="fw-semibold">Emergency Relief Program</h5>
+            <p class="text-muted small mb-3">
+              Immediate assistance for families affected by disasters.
+            </p>
+
+            <div class="mb-1 small">
+              <strong>Required:</strong> PKR 500,000
+            </div>
+            <div class="mb-3 small">
+              <strong>Collected:</strong> PKR 220,000
+            </div>
+
+            <div class="progress mb-4">
+              <div class="progress-bar" style="width:44%"></div>
+            </div>
+
+            <button class="btn btn-success mt-auto w-100">
+              Donate Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+         <!-- =====================
+           CAUSE CARD 4
+      ===================== -->
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="card cause-card h-100 shadow-sm cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#donationDetailsModal"
+        >
+          <div class="card-body d-flex flex-column">
+
+            <span class="badge bg-warning text-dark mb-2 align-self-start">Food</span>
+
+            <h5 class="fw-semibold">Food Ration Support</h5>
+            <p class="text-muted small mb-3">
+              Provide monthly food supplies to needy families.
+            </p>
+
+            <div class="mb-1 small">
+              <strong>Required:</strong> PKR 120,000
+            </div>
+            <div class="mb-3 small">
+              <strong>Collected:</strong> PKR 60,000
+            </div>
+
+            <div class="progress mb-4">
+              <div class="progress-bar" style="width:50%"></div>
+            </div>
+
+            <button class="btn btn-success mt-auto w-100">
+              Donate Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+         <!-- =====================
+           CAUSE CARD 5
+      ===================== -->
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="card cause-card h-100 shadow-sm cursor-pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#donationDetailsModal"
+        >
+          <div class="card-body d-flex flex-column">
+
+            <span class="badge bg-secondary mb-2 align-self-start">Housing</span>
+
+            <h5 class="fw-semibold">Shelter & Housing Aid</h5>
+            <p class="text-muted small mb-3">
+              Temporary housing support for homeless families.
+            </p>
+
+            <div class="mb-1 small">
+              <strong>Required:</strong> PKR 400,000
+            </div>
+            <div class="mb-3 small">
+              <strong>Collected:</strong> PKR 180,000
+            </div>
+
+            <div class="progress mb-4">
+              <div class="progress-bar" style="width:45%"></div>
+            </div>
+
+            <button class="btn btn-success mt-auto w-100">
+               Donate Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- =====================
+     DONATION DETAILS MODAL
+===================== -->
+<div
+  class="modal fade"
+  id="donationDetailsModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Medical Surgery Assistance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- TRUST INDICATORS -->
+        <div class="mb-3">
+          <span class="badge bg-success me-2">Verified</span>
+          <span class="badge bg-danger me-2">Urgent</span>
+          <span class="badge bg-primary">Medical</span>
+        </div>
+
+        <!-- FULL DESCRIPTION -->
+        <p>
+          This donation case involves a patient requiring urgent
+          life-saving medical surgery. All documents and medical
+          records have been verified by our team to ensure transparency.
+        </p>
+
+        <!-- NEEDY DETAILS -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item">
+            <strong>Name:</strong> Ali Raza
+          </li>
+          <li class="list-group-item">
+            <strong>Case Type:</strong> Individual Medical Case
+          </li>
+          <li class="list-group-item">
+            <strong>City:</strong> Lahore
+          </li>
+        </ul>
+
+        <!-- CONTACT -->
+        <h6>Contact Information</h6>
+        <p>
+          <strong>Phone:</strong> 03XX-XXXXXXX<br>
+          <strong>Email:</strong> support@example.com
+        </p>
+
+        <!-- DONATION INSTRUCTIONS -->
+        <h6>Donation Instructions</h6>
+        <p class="mb-0">
+          Donations can be made via bank transfer or by contacting the
+          provided number. All donations are recorded for accountability.
+        </p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button class="btn btn-success">
+          Proceed to Donate (UI)
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- =====================
+     FOOTER
+===================== -->
+<footer class="footer mt-4">
+  © 2026 U Devs | Donation Collection Platform
+</footer>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

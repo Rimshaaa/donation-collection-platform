@@ -1,0 +1,305 @@
+/* ===============================
+   ROOT THEME COLORS
+================================ */
+:root {
+  --green-primary: #2f9e44;
+  --green-light: #e6f4ea;
+  --green-soft: #4ade80;
+  --dark-bg: #111827;
+  --dark-bg-light: #1f2933;
+  --text-dark: #1a202c;
+  --text-muted: #6b7280;
+  --white: #ffffff;
+}
+
+/* ===============================
+   GLOBAL STYLES
+================================ */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--dark-bg-light), var(--dark-bg));
+  padding: 22px;
+  flex-shrink: 0;
+}
+
+.sidebar h5 {
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.sidebar a {
+  display: block;
+  color: #d1d5db;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(47, 158, 68, 0.18);
+  color: var(--white);
+}
+
+.sidebar a.active {
+  background-color: var(--green-primary);
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ===============================
+   MAIN CONTENT
+================================ */
+.main-content {
+  flex-grow: 1;
+  padding: 32px;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* ===============================
+   BASE CARD STYLES
+================================ */
+.card {
+  border: none;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+/* ===============================
+   DASHBOARD CARDS (COMPACT)
+================================ */
+.dashboard-card {
+  min-height: 110px; /* compact size */
+  display: flex;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dashboard-card .card-body {
+  padding: 18px 20px;
+}
+
+.dashboard-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.dashboard-card h6 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent Borders */
+.card-success {
+  border-left: 6px solid var(--green-primary);
+}
+
+.card-danger {
+  border-left: 6px solid #dc2626;
+}
+
+/* ===============================
+   DASHBOARD HERO SECTION
+================================ */
+.dashboard-hero {
+  background: linear-gradient(135deg, var(--green-primary), var(--green-soft));
+  color: var(--white);
+  border-radius: 26px;
+  padding: 60px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.dashboard-hero h2 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.dashboard-hero p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: #ecfdf5;
+}
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.hero-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 28px;
+  border-radius: 18px;
+  min-width: 140px;
+}
+
+.hero-box h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.hero-box span {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Hero buttons */
+.hero-actions .btn {
+  border-radius: 14px;
+  padding: 12px 26px;
+  font-weight: 600;
+}
+
+/* ===============================
+   DONATION CAUSE CARDS
+================================ */
+.cause-card {
+  border-radius: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cause-card .card-body {
+  padding: 22px;
+}
+
+.cause-card h5 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.cause-card p {
+  line-height: 1.5;
+}
+
+.cause-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+}
+
+.progress-bar {
+  background-color: var(--green-primary);
+  border-radius: 999px;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: var(--green-primary);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #278a3a;
+}
+
+/* ===============================
+   MODALS
+================================ */
+.modal-content {
+  border-radius: 18px;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.modal-body h6 {
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.modal-body p {
+  line-height: 1.6;
+}
+
+/* ===============================
+   DONOR ROW HIGHLIGHTING
+================================ */
+.row-regular > td {
+  background-color: #ecfdf5 !important;
+}
+
+.row-first > td {
+  background-color: #eff6ff !important;
+}
+
+.row-regular:hover > td,
+.row-first:hover > td {
+  filter: brightness(0.97);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+  background-color: var(--dark-bg);
+  color: #e5e7eb;
+  padding: 18px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .dashboard-hero {
+    padding: 40px 24px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
